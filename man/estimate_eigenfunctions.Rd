@@ -1,0 +1,26 @@
+\name{estimate_eigenfunctions}
+\alias{estimate_eigenfunctions}
+\title{estimates eigenfunctions using fitted covariance function}
+\usage{
+  estimate_eigenfunctions(cov.fit)
+}
+\arguments{
+  \item{cov.fit}{fitted covariance function. The structure
+  should match the output of \code{estimate_cov_function}}
+}
+\value{
+  list of the eigenfunctions and a vector of the
+  corresponding eigenvalues.
+}
+\description{
+  estimates eigenfunctions using fitted covariance function
+}
+\examples{
+data(sfdat)
+cov.fit <- estimate_cov_function(sfdat, n.marginal.knots=5)
+eig.fit <- estimate_eigenfunctions(cov.fit)
+eig.fns <- eig.fit$fns
+ef1 <- eig.fns[[1]]
+curve(ef1)
+}
+

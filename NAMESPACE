@@ -1,0 +1,4 @@
+export(estimate_cov_function)
+export(estimate_eigenfunctions)
+export(my.samp.cov2d)
+export(plot_covfit)

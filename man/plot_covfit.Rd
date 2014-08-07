@@ -1,0 +1,35 @@
+\name{plot_covfit}
+\alias{plot_covfit}
+\title{Plot fitted covariance function}
+\usage{
+  plot_covfit(fit, grid.resolution = 40, onlyPen = FALSE,
+    onlyUnpen = FALSE, image = FALSE, ...)
+}
+\arguments{
+  \item{fit}{fitted covariance object}
+
+  \item{grid.resolution}{integer specifying the resolution
+  grid points where the funciton will be evaluated}
+
+  \item{onlyPen}{if TRUE will plot only the portion of the
+  covariance function estimated from penalized funcitons}
+
+  \item{onlyUnpen}{if TRUE will plot only the portion of
+  the covariance function estimated from unpenalized
+  funcitons}
+
+  \item{image}{if TRUE will produce an image plot. By
+  default the plost is a wireframe plot ... additional
+  arguments sent to plotting functions. See
+  \code{image.plot} and \code{wireframe} for details on
+  additional arguments}
+}
+\description{
+  Plot fitted covariance function
+}
+\examples{
+data(sfdat)
+covfit <- estimate_cov_function(sfdat, n.marginal.knots=10)
+plot_covfit(covfit, image=TRUE)
+}
+
