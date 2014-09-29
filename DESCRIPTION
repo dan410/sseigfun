@@ -14,24 +14,3 @@ Depends:
     plyr,
     ggplot2,
     lattice
-Collate:
-    'R00.R'
-    'R01.R'
-    'R1.R'
-    'cov.fn.R'
-    'covf_cy.R'
-    'create-g.R'
-    'denman.beavers.R'
-    'estimate_cov_function.R'
-    'estimate_eigenfunctions.R'
-    'k1.R'
-    'k2.R'
-    'k4.R'
-    'my.samp.cov2d.R'
-    'penalized.matrix.R'
-    'penalized.terms.R'
-    'plot_basis_function.R'
-    'plot_covfit.R'
-    'ssfcov2-internal.R'
-    'tprk.R'
-    'unpenalized.terms.R'
